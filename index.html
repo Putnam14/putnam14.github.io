@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Page - Bridger Putnam</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <!-- Navbar Container -->
+    <div class="container">
+
+        <!-- Toggle and Brand -->
+        <div class="navbar-header">
+            <!-- Toggle -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavComponents" aria-expanded"false">
+                <i class="glyphicon glyphicon-align-center"></i>
+            </button>
+
+            <!-- Navbar Brand -->
+            <a href="#about" class="navbar-brand">
+                Bridger Putnam
+            </a>
+        </div>
+
+
+        <!-- Navbar Collapse [contains navbar components such as navbar menu and forms ] -->
+        <div class="collapse navbar-collapse" id="myNavComponents">
+
+            <!-- Navbar Menu -->
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active">
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <!-- Navbar link with a dropdown menu -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Social
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Github</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Intro --> 
+<div class="container text-center" id="about">
+  <div class="row fill-height">
+    <div id="center-page" class="col-xs-12">
+      <h1>Bridger Putnam</h1>
+      <h3>Web Designer | Project Manager | Full-stack developer
+    </div>
+  </div>
+    
+    <!-- Portfolio -->
+  <div class="row" id="portfolio">
+    <div class="col-xs-12">
+      <hr>
+      <h2>Recent work</h2>
+    </div>
+    <div class="col-xs-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Reading Length
+        </div>
+        <div class="panel-image">
+          <img src="http://i.imgur.com/QkgLS4n.jpg" alt="ReadingLength Website homepage screenshot" class="panel-image-preview" />
+        </div>
+        <div class="panel-body">
+          Reading Length is a search engine for books' estimated word counts and reading times. I designed the website from concept to finish, originally developing the website using HTML, CSS, and PHP before transitioning to WordPress.<hr>
+          <a href="https://www.readinglength.com/">Visit website</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Designer portfolio
+        </div>
+        <div class="panel-body">
+          Developed portfolio website for an interior designer, working with them from the design phase through implementation and hosting.
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Artist portfolio
+        </div>
+        <div class="panel-body">
+          Artist website displaying images from instagram feed and form for commission piece applications.
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Project 4
+        </div>
+        <div class="panel-body">
+          Project description
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <!-- Contact Form -->
+    <div class="row" id="contact">
+      <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+        <fieldset>
+          <legend>Contact me today!</legend>
+          
+          <div class="col-xs-8">
+            <div class="form-group">
+              <label class="col-xs-4 control-label">First name</label>  
+              <div class="col-xs-6 inputGroupContainer">
+                <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input  name="first_name" placeholder="First name" class="form-control"  type="text">
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="col-xs-4 control-label">Last name</label>  
+              <div class="col-xs-6 inputGroupContainer">
+                <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input  name="last_name" placeholder="Last name" class="form-control"  type="text">
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="col-xs-4 control-label">Email</label>  
+                <div class="col-xs-6 inputGroupContainer">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                    <input name="email" placeholder="Email address" class="form-control"  type="text">
+                </div>
+              </div>
+            </div>
+          
+            <div class="form-group">
+              <label class="col-xs-4 control-label">Project description</label>
+                <div class="col-xs-6 inputGroupContainer">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                    <textarea class="form-control" name="comment" placeholder="Project description"></textarea>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Success message -->
+<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i><br>Thank you for contacting me, I will get back to you shortly!</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4">
+    <button type="submit" class="btn btn-info" >Send <span class="glyphicon glyphicon-send"></span></button>
+  </div>
+</div>
+            
+          </div>
+          <div class="col-xs-4">
+            <p>More about me...</p>
+          </div>
+          
+        </fieldset>
+      </form>
+    </div>
+    
+</div>
+<footer class="page-footer inverse text-center">
+    <div class="container-fluid">
+      <p>Footer Stuff</p>
+  </div>
+  </footer>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
+  <script  src="js/index.js"></script>
+</body>
+</html>
